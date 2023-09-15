@@ -1,0 +1,277 @@
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 23, 228, 1) 0%,
+    rgba(134, 251, 251, 1) 100%
+  );
+  height: 2px;
+}
+
+nav {
+  padding: 0px;
+  margin: 0px;
+  font-family: var(--mono);
+}
+.fa-linkedin {
+  font-size: 150%;
+  color: var(--aqua);
+}
+.fa-github {
+  font-size: 150%;
+  color: var(--aqua);
+}
+.fa-file-code {
+  color: var(--aqua);
+}
+.fa-file-code:hover {
+  color: var(--magenta);
+}
+.fa-github:hover {
+  color: var(--magenta);
+}
+.fa-linkedin:hover {
+  color: var(--magenta);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 80%;
+  flex-flow: row wrap;
+  font-size: 1.5rem;
+}
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+nav h1 a {
+  font-family: var(--sans);
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+}
+nav a:hover {
+  color: var(--magenta);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+#intro {
+  padding: 4rem 1rem 10rem 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+#intro .introp1 {
+  font-family: var(--mono);
+}
+#intro span {
+  padding-top: 10px;
+  display: block;
+  font-size: 3rem;
+  font-family: var(--sans);
+  color: var(--aqua);
+}
+#intro h2 {
+  font-size: 3rem;
+}
+#contactme {
+  color: var(white);
+
+  text-align: center;
+  padding: 3rem 0;
+  margin: 0 auto;
+  width: 400px;
+}
+
+/*this is the Style part for #PROJECTS */
+
+.section-plum {
+  background-color: var(--plum);
+}
+.section-dblue {
+  background-color: var(--dkblue);
+}
+.section-plum a {
+  color: var(--white);
+}
+
+#contactme a {
+  font-size: 1.2rem;
+}
+#contactme a:hover {
+  text-decoration: none;
+}
+.button {
+  background-color: var(--magenta);
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: var(--mono);
+}
+.button:hover {
+  color: var(--white);
+  background-color: var(--hotmag);
+}
+
+footer {
+  text-align: center;
+
+  padding: 4rem 0;
+  background-color: var(--black);
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 3rem;
+}
+footer h2 {
+  text-align: center;
+  font-size: 25px;
+}
+footer p {
+  text-align: center;
+  font-size: 13px;
+}
+.fa-square-github {
+  font-size: 40px;
+  color: var(--magenta);
+}
+.fa-square-github:hover {
+  color: var(--hotmag);
+}
+.fa-linkedin-in {
+  font-size: 40px;
+  color: var(--magenta);
+}
+.fa-linkedin-in:hover {
+  color: var(--hotmag);
+}
+.fa-envelope {
+  font-size: 40px;
+  color: var(--magenta);
+}
+.fa-envelope:hover {
+  color: var(--hotmag);
+}
+
+/*PROJECTS*/
+
+#Projects {
+  padding: 4rem 1rem;
+}
+#Projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: calc(2.5rem * 1.5);
+}
+#Projects h3 {
+  color: var(--aqua);
+}
+#Projects h4 {
+  font-size: 1rem;
+  font-family: var(--mono);
+  margin: 0px;
+}
+.blackbox {
+  background-color: var(--black);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#Projects ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+#Projects img {
+  margin: 4rem 0 2rem 0;
+  border-left: solid 1px var(--aqua);
+  border-top: solid 1px var(--aqua);
+  padding: 20px;
+  border-radius: 30px;
+  width: 100%;
+}
+
+/*media Q */
+
+@media (min-width: 550px) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .textpro {
+    grid-column: 5/10;
+    grid-row: 1/2;
+    order: 2;
+    text-align: right;
+  }
+  .imgofpro {
+    grid-row: 1/2;
+    grid-column: 1/6;
+  }
+  #Projects ul {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}
